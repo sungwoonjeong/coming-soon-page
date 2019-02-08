@@ -1,0 +1,62 @@
+nav {
+  position: fixed;
+  z-index: 1000;
+}
+
+.nav {
+  display: none;
+  text-align: center;
+  z-index: 50;
+  background-color: rgba(0,0,0,0.83);
+  width: 100%;
+  height: 100%;
+  transition: all .2s linear;
+}
+
+li {
+  list-style-type: none;
+}
+
+.navigation:hover {
+  color: pink;
+  outline: none;
+  transition: all .2s linear;
+}
+
+ul > li::before {
+  display: none;
+}
+
+[type="checkbox"] + label::before {
+  display: none;
+}
+
+.nav-check:checked ~ .nav {
+  display: block;
+}
+
+.nav-label {
+  cursor: pointer;
+  display: inline-block;
+  max-width: 100%;
+  z-index: 1000;
+  top: 5%;
+}
+
+.nav-open{
+  display: block;
+  max-width: 40px;
+}
+
+.nav-close {
+  display: none;
+  max-width: 40px;
+}
+
+.nav-check:checked ~ .nav-label .nav-open {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-close {
+  display: block;
+}

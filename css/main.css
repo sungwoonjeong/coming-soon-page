@@ -1,0 +1,41 @@
+html {
+  background-color: #ffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.description {
+  bottom: calc(50% - 50px);
+  left: calc(50% - 50px);
+}
+
+h1 {
+  color: #595169;
+  text-shadow: 1px 1px 15px rgba(255, 255, 255, .7);
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h3 {
+  color: #595169;
+}
+
+p {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+#pinterest {
+  fill: indigo;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .banner {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .content {
+    position: absolute;
+    left: 10%;
+  }
+
+}
